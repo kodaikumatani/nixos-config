@@ -57,6 +57,7 @@
     vim
     git
     curl
+    google-chrome
   ];
 
   programs.steam = {
