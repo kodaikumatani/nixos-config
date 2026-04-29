@@ -27,6 +27,17 @@
   # ===== Locale / Time =====
   time.timeZone = "Asia/Tokyo";
 
+  # ===== Fonts (Japanese: Noto Sans / Serif / Mono CJK JP) =====
+  fonts.packages = with pkgs; [
+    noto-fonts-cjk-sans
+    noto-fonts-cjk-serif
+  ];
+  fonts.fontconfig.defaultFonts = {
+    sansSerif = [ "Noto Sans CJK JP" ];
+    serif = [ "Noto Serif CJK JP" ];
+    monospace = [ "Noto Sans Mono CJK JP" ];
+  };
+
   # ===== Graphics (NVIDIA) =====
   hardware.graphics = {
     enable = true;
