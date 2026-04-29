@@ -11,6 +11,7 @@
       exec "${cursor-cli}/bin/cursor-agent" "$@"
     '')
     google-chrome
+    discord
   ];
 
   programs.bash.enable = true;
