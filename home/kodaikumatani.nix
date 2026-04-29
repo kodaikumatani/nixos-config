@@ -10,6 +10,12 @@
     google-chrome
   ];
 
+  home.shellAliases = {
+    agent = "cursor-agent";
+  };
+
+  programs.bash.enable = true;
+
   programs.git = {
     enable = true;
     userName = "kodaikumatani";
