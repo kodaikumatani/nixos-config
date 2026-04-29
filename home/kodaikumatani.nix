@@ -7,12 +7,11 @@
 
   home.packages = with pkgs; [
     cursor-cli
+    (writeShellScriptBin "agent" ''
+      exec "${cursor-cli}/bin/cursor-agent" "$@"
+    '')
     google-chrome
   ];
-
-  home.shellAliases = {
-    agent = "cursor-agent";
-  };
 
   programs.bash.enable = true;
 
