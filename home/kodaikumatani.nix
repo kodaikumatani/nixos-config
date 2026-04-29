@@ -18,9 +18,11 @@
 
   programs.git = {
     enable = true;
-    userName = "kodaikumatani";
-    userEmail = "koudai.aco5423@gmail.com";
-    extraConfig = {
+    settings = {
+      user = {
+        name = "kodaikumatani";
+        email = "koudai.aco5423@gmail.com";
+      };
       init.defaultBranch = "main";
       pull.rebase = false;
       push.autoSetupRemote = true;
