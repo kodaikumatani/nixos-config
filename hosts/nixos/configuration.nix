@@ -45,7 +45,7 @@
   };
   hardware.nvidia = {
     modesetting.enable = true;
-    powerManagement.enable = false;
+    powerManagement.enable = true;
     # オープンソース版カーネルモジュール（Turing 世代以降推奨）
     open = true;
     nvidiaSettings = true;
