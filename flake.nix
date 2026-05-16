@@ -27,7 +27,7 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.sharedModules = [ plasma-manager.homeManagerModules.plasma-manager ];
+          home-manager.sharedModules = [ plasma-manager.homeModules.plasma-manager ];
           home-manager.extraSpecialArgs = { inherit dotfiles; };
           home-manager.users.kodaikumatani = import ./home/kodaikumatani.nix;
         }
