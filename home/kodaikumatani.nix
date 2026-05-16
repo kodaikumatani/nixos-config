@@ -65,33 +65,33 @@
     enable = true;
     shortcuts = {
       kwin = {
-        "Show Desktop" = [ ];
-        "Overview" = [ ];
-        "Edit Tiles" = [ ];
-        "Window Close" = [ ];
-        "Switch to Desktop 1" = [ ];
-        "Switch to Desktop 2" = [ ];
-        "Switch to Desktop 3" = [ ];
-        "Switch to Desktop 4" = [ ];
-        "Switch to Desktop 5" = [ ];
-        "Switch to Desktop 6" = [ ];
-        "Switch to Desktop 7" = [ ];
-        "Switch to Desktop 8" = [ ];
-        "Switch to Desktop 9" = [ ];
+        "Show Desktop" = "none";
+        "Overview" = "none";
+        "Edit Tiles" = "none";
+        "Window Close" = "none";
+        "Switch to Desktop 1" = "none";
+        "Switch to Desktop 2" = "none";
+        "Switch to Desktop 3" = "none";
+        "Switch to Desktop 4" = "none";
+        "Switch to Desktop 5" = "none";
+        "Switch to Desktop 6" = "none";
+        "Switch to Desktop 7" = "none";
+        "Switch to Desktop 8" = "none";
+        "Switch to Desktop 9" = "none";
       };
       plasmashell = {
-        "activate task manager entry 1" = [ ];
-        "activate task manager entry 2" = [ ];
-        "activate task manager entry 3" = [ ];
-        "activate task manager entry 4" = [ ];
-        "activate task manager entry 5" = [ ];
-        "activate task manager entry 6" = [ ];
-        "activate task manager entry 7" = [ ];
-        "activate task manager entry 8" = [ ];
-        "activate task manager entry 9" = [ ];
+        "activate task manager entry 1" = "none";
+        "activate task manager entry 2" = "none";
+        "activate task manager entry 3" = "none";
+        "activate task manager entry 4" = "none";
+        "activate task manager entry 5" = "none";
+        "activate task manager entry 6" = "none";
+        "activate task manager entry 7" = "none";
+        "activate task manager entry 8" = "none";
+        "activate task manager entry 9" = "none";
       };
       kscreen = {
-        "Display" = [ ];
+        "Display" = "none";
       };
     };
   };
