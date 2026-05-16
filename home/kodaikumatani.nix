@@ -16,7 +16,11 @@
     claude-code
   ];
 
-  programs.bash.enable = true;
+  programs.zsh = {
+    enable = true;
+    autosuggestion.enable = true;
+    syntaxHighlighting.enable = true;
+  };
 
   programs.git = {
     enable = true;

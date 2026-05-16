@@ -83,7 +83,10 @@
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" "video" "audio" ];
     initialPassword = "changeme";
+    shell = pkgs.zsh;
   };
+
+  programs.zsh.enable = true;
 
   # ===== Services =====
   services.openssh.enable = true;
