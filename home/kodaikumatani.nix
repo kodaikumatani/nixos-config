@@ -15,6 +15,7 @@
     starship
     mise
     lsof
+    kubectl
     cursor-cli
     (writeShellScriptBin "agent" ''
       exec "${cursor-cli}/bin/cursor-agent" "$@"
