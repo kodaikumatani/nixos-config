@@ -7,6 +7,7 @@
 
   home.packages = with pkgs; [
     vim
+    gh
     cursor-cli
     (writeShellScriptBin "agent" ''
       exec "${cursor-cli}/bin/cursor-agent" "$@"
