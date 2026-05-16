@@ -4,7 +4,13 @@
   imports = [ ./hardware-configuration.nix ];
 
   # ===== Nix / nixpkgs =====
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings = {
+    experimental-features = [ "nix-command" "flakes" ];
+    # aarch64 (例: Raspberry Pi 5 イメージ) を x86_64 上で QEMU ユーザ空間エミュでビルド可能にする
+    extra-platforms = [ "aarch64-linux" ];
+    trusted-users = [ "root" "kodaikumatani" ];
+  };
+  boot.binfmt.emulatedSystems = [ "aarch64-linux" ];
   nixpkgs.config.allowUnfree = true;
 
   # ===== Boot loader (GRUB + EFI) =====
@@ -92,8 +98,6 @@
 
   # ===== System packages =====
   environment.systemPackages = with pkgs; [
-    vim
-    git
     curl
   ];
 

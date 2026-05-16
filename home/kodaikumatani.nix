@@ -6,12 +6,14 @@
   home.stateVersion = "25.11";
 
   home.packages = with pkgs; [
+    vim
     cursor-cli
     (writeShellScriptBin "agent" ''
       exec "${cursor-cli}/bin/cursor-agent" "$@"
     '')
     google-chrome
     discord
+    claude-code
   ];
 
   programs.bash.enable = true;
