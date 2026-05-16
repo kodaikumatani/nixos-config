@@ -59,6 +59,12 @@
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
+  # ===== Bluetooth =====
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+  };
+
   # ===== Audio (PipeWire) =====
   security.rtkit.enable = true;
   services.pipewire = {
