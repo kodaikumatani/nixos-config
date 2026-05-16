@@ -11,6 +11,7 @@
     ghq
     fzf
     tmux
+    ghostty
     starship
     mise
     lsof
