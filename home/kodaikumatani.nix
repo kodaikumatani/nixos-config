@@ -90,6 +90,9 @@
         "activate task manager entry 8" = [ ];
         "activate task manager entry 9" = [ ];
       };
+      kscreen = {
+        "Display" = [ ];
+      };
     };
   };
 }
